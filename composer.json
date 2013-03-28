@@ -1,0 +1,47 @@
+{
+    "name": "kapitchi/kap-dev",
+    "description": "Provides authentication, identity and role management.",
+    "keywords": [
+        "kapitchi",
+        "zf2",
+        "user",
+        "authentication",
+        "registration"
+    ],
+    "homepage": "http://kapitchi.com",
+    "authors": [
+        {
+            "name": "Matus Zeman",
+            "email": "mz@kapitchi.com",
+            "homepage": "http://kapitchi.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Andrej Kukucka",
+            "email": "andrej.kuku@gmail.com",
+            "homepage": "http://kapitchi.com",
+            "role": "Developer"
+        }
+       
+    ],
+    "support": {
+        "email": "dev@kapitchi.com"
+    },
+    "minimum-stability": "dev",
+    "suggest": {
+        "kapitchi/app": "KapitchiApp for plugin management"
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "kapitchi/base": "dev-master",
+        "kapitchi/entity": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Kap-dev": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
