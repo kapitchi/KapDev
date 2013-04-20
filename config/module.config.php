@@ -5,7 +5,7 @@ return array(
         'display_exceptions'       => true,
         
         'template_path_stack' => array(
-            'dev' => __DIR__ . '/../view',
+            //'dev' => __DIR__ . '/../view',
         ),
     ),
     'router' => array(
