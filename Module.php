@@ -49,6 +49,11 @@ class Module extends AbstractModule
     {
         return array(
             'factories' => array(
+                 'KapDev\Controller\App' => function($sm) {
+                    $cont = new Controller\AppController(
+                        $sm->getServiceLocator()->get('KapitchiApp\Service\App'));
+                    return $cont;
+                },
             )
         );
     }
