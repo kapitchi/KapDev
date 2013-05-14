@@ -1,13 +1,11 @@
 {
     "name": "kapitchi/kap-dev",
     "license": "LGPL-3.0",
-    "description": "Provides authentication, identity and role management.",
+    "description": "Kapitchi Developer Tools",
     "keywords": [
         "kapitchi",
         "zf2",
-        "user",
-        "authentication",
-        "registration"
+        "developer"
     ],
     "homepage": "http://kapitchi.com",
     "authors": [
@@ -29,17 +27,15 @@
         "email": "dev@kapitchi.com"
     },
     "minimum-stability": "dev",
-    "suggest": {
-        "kapitchi/app": "KapitchiApp for plugin management"
-    },
     "require": {
         "php": ">=5.3.3",
         "kapitchi/base": "dev-master",
-        "kapitchi/entity": "dev-master"
+        "kapitchi/entity": "dev-master",
+        "zendframework/zend-developer-tools": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "Kap-dev": "src/"
+            "KapDev\\": "src/"
         },
         "classmap": [
             "./Module.php"
